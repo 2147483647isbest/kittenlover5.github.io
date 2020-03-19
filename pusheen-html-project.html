@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+Checkbox: <input type="checkbox" id="myCheck"  onclick="myFunction()">
+
+Checkbox2: <input type="checkbox" id="myCheck2"  onclick="myFunction2()">
+
+<button type="button"
+onclick="myFunction3()">
+
+Click me to show what is checked.</button>
+
+<p id="text4" style="display:none"> <img src="https://subscriptionboxramblings.com/wp-content/uploads/2016/10/Screen-Shot-2016-10-25-at-10.34.36-AM.jpg" style="width:380px;height:300px;"></p>
+
+<p id="text" style="display:none"><img src="http://bdawgskip.com/images/pshfall0.jpg" style="width:380px;height:250px;"></p>
+
+<p id="text2" style="display:none"><img src="https://pbs.twimg.com/ext_tw_video_thumb/843922933886210048/pu/img/-Gw8W1dXp2uI1U1e.jpg" style="width:380px;height:360px;"></p>
+
+<p id="text3" style="display:none"><img src="https://i.pinimg.com/originals/89/2a/b4/892ab4ee3311b241683a73b42ab06be3.png" style="width:400px;height:180px;"></p>
+
+<script>
+
+function myFunction3() {
+  var checkBox = document.getElementById("myCheck");
+  var checkBox2 = document.getElementById("myCheck2");
+   if (checkBox.checked == true && checkBox2.checked == true){text3.style.display = "block";
+   text.style.display = "none";
+   text2.style.display = "none";
+   text4.style.display = "none";
+   }
+  else if( checkBox2.checked == true ) {text2.style.display = "block";
+   text3.style.display = "none";
+   text.style.display = "none";
+   text4.style.display = "none"}
+   else if (checkBox.checked == true){text.style.display = "block";
+   text3.style.display = "none";
+   text2.style.display = "none";
+   text4.style.display = "none"}
+  else {text4.style.display = "block";
+   text3.style.display = "none";
+   text2.style.display = "none";
+   text.style.display = "none"}
+}
+</script>
+
+</body>
+</html>
